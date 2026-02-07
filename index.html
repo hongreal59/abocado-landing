@@ -609,6 +609,16 @@ footer {
   border-top: 1px solid rgba(0,0,0,0.04);
 }
 
+footer a {
+  color: var(--green-mid);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--green-dark);
+}
+
 /* ANIMATIONS */
 @keyframes fadeUp {
   to {
@@ -816,6 +826,7 @@ footer {
 <!-- FOOTER -->
 <footer>
   <p>© 2026 Abocado. Built with 🥑 by Shawn.</p>
+  <p><a href="/privacy">Privacy Policy</a></p>
 </footer>
 
 <script>
