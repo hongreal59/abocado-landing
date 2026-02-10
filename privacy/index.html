@@ -8,7 +8,7 @@
 <link rel="alternate icon" href="../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Caveat:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --bg: #FDFBF5;
@@ -72,9 +72,9 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: 'Bricolage Grotesque', serif;
-  font-weight: 800;
-  font-size: 1.4rem;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.6rem;
   color: var(--green-dark);
   text-decoration: none;
 }
@@ -84,13 +84,16 @@ nav {
 }
 
 .nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   background: var(--green-dark);
   color: white;
   border: none;
-  padding: 0.65rem 1.5rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 100px;
   font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -119,12 +122,12 @@ nav {
 }
 
 .privacy-header h1 {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 800;
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   color: var(--text-primary);
   margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .privacy-header p {
@@ -141,8 +144,8 @@ nav {
 }
 
 .privacy-content h2 {
-  font-family: 'Bricolage Grotesque', serif;
-  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
   font-size: 1.8rem;
   color: var(--green-dark);
   margin-top: 2.5rem;
@@ -154,8 +157,8 @@ nav {
 }
 
 .privacy-content h3 {
-  font-family: 'Bricolage Grotesque', serif;
-  font-weight: 600;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
   font-size: 1.3rem;
   color: var(--text-primary);
   margin-top: 1.5rem;
@@ -261,7 +264,10 @@ footer a:hover {
     <span class="avo-icon">🥑</span>
     <span>abocado</span>
   </a>
-  <a href="/#waitlist" class="nav-cta">Join beta</a>
+  <a href="/#waitlist" class="nav-cta">
+    <svg width="14" height="17" viewBox="0 0 814 1000" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57.8-155.5-127.4c-58.3-81.2-105.6-207.6-105.6-328.3 0-193 125.5-295.6 248.9-295.6 65.6 0 120.3 43.1 161.4 43.1 39.2 0 100.2-45.7 174.5-45.7 28.2 0 129.6 2.6 196.4 94.9zM554.1 159.4c31.1-36.9 53.1-88.1 53.1-139.4 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.9 32.4-54.4 83.7-54.4 135.7 0 7.8.6 15.6 1.3 18.2 2.6.6 6.4 1.3 10.2 1.3 45.4 0 103.3-30.4 138.8-71.5z"/></svg>
+    Join the waitlist
+  </a>
 </nav>
 
 <!-- PRIVACY PAGE -->
