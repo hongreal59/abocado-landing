@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>abocado — mindless scrolling to meaningful progress</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥑</text></svg>">
 <link rel="alternate icon" href="favicon.ico">
@@ -58,9 +58,14 @@ body::after {
 /* NAV */
 nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   padding: 1rem 2rem;
+  padding-top: max(1rem, env(safe-area-inset-top));
+  padding-left: max(2rem, env(safe-area-inset-left));
+  padding-right: max(2rem, env(safe-area-inset-right));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,6 +74,11 @@ nav {
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(74, 150, 87, 0.06);
   transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .nav-logo {
@@ -722,7 +732,12 @@ footer a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  nav { padding: 0.8rem 1.2rem; }
+  nav { 
+    padding: 0.8rem 1.2rem;
+    padding-top: max(0.8rem, env(safe-area-inset-top));
+    padding-left: max(1.2rem, env(safe-area-inset-left));
+    padding-right: max(1.2rem, env(safe-area-inset-right));
+  }
   .nav-logo { font-size: 1.2rem; }
   
   .hero {
