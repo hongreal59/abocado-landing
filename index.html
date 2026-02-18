@@ -690,16 +690,51 @@ section {
 
 /* FOOTER */
 footer {
-  padding: 2rem;
+  background: var(--bg-warm);
+  padding: 4rem 2rem 2rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.footer-col-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 2rem auto 0;
   text-align: center;
   color: var(--text-muted);
   font-size: 0.85rem;
-  border-top: 1px solid rgba(0,0,0,0.04);
 }
 
 footer a {
-  color: var(--green-mid);
+  color: var(--text-secondary);
   text-decoration: none;
+  font-size: 0.95rem;
   transition: color 0.2s ease;
 }
 
@@ -789,6 +824,11 @@ footer a:hover {
     width: 100%;
     padding: 1rem;
   }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 }
 </style>
 </head>
@@ -834,7 +874,7 @@ footer a:hover {
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="how-it-works">
+<section class="how-it-works" id="how-it-works">
   <div class="section-inner">
     <div class="section-header reveal">
       <h2>Focus first. Scroll later.<br>Feel great about both.</h2>
@@ -899,7 +939,7 @@ footer a:hover {
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section class="about" id="about">
   <div class="about-inner reveal">
     <div class="about-avatar"><img src="images/avatar.png" alt="Shawn"></div>
     <h2>Built by someone who couldn't stop doom scrolling either.</h2>
@@ -926,8 +966,27 @@ footer a:hover {
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Abocado. Built with 🥑 by Shawn.</p>
-  <p><a href="/privacy">Privacy Policy</a></p>
+  <div class="footer-inner">
+    <div class="footer-col">
+      <p class="footer-col-label">Primary</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://abocado.userjot.com/?cursor=1&order=top&limit=10" target="_blank">Feedback Board</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-label">Other</p>
+      <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="mailto:hello.abocado@gmail.com">Support</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Abocado. Built 🥑 by Shawn.</p>
+  </div>
 </footer>
 
 <script>

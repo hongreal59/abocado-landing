@@ -52,62 +52,26 @@ body::after {
   z-index: 9999;
 }
 
-/* NAV */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1000;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(253, 251, 245, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(74, 150, 87, 0.06);
-  transition: all 0.3s ease;
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: 'Caveat', cursive;
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: var(--green-dark);
-  text-decoration: none;
-}
-
-.nav-logo .avo-icon {
-  font-size: 1.6rem;
-}
-
-.nav-cta {
+/* BACK LINK */
+.back-link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: var(--green-dark);
-  color: white;
-  border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 100px;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  color: var(--green-dark);
   text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: gap 0.2s ease, color 0.2s ease;
 }
 
-.nav-cta:hover {
-  background: #3D8556;
-  transform: scale(1.05);
+.back-link:hover {
+  gap: 0.6rem;
+  color: var(--green-mid);
 }
 
 /* PRIVACY CONTENT */
 .privacy-page {
-  padding: 8rem 2rem 4rem;
+  padding: 3rem 2rem 4rem;
   min-height: 100vh;
 }
 
@@ -117,7 +81,8 @@ nav {
 }
 
 .privacy-header {
-  text-align: center;
+  text-align: left;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -235,11 +200,8 @@ footer a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  nav { padding: 0.8rem 1.2rem; }
-  .nav-logo { font-size: 1.2rem; }
-  
   .privacy-page {
-    padding: 7rem 1.5rem 3rem;
+    padding: 2rem 1.5rem 3rem;
   }
   
   .privacy-content {
@@ -258,21 +220,11 @@ footer a:hover {
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="/" class="nav-logo">
-    <span class="avo-icon">🥑</span>
-    <span>abocado</span>
-  </a>
-  <a href="/#waitlist" class="nav-cta">
-    <svg width="14" height="17" viewBox="0 0 814 1000" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57.8-155.5-127.4c-58.3-81.2-105.6-207.6-105.6-328.3 0-193 125.5-295.6 248.9-295.6 65.6 0 120.3 43.1 161.4 43.1 39.2 0 100.2-45.7 174.5-45.7 28.2 0 129.6 2.6 196.4 94.9zM554.1 159.4c31.1-36.9 53.1-88.1 53.1-139.4 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.9 32.4-54.4 83.7-54.4 135.7 0 7.8.6 15.6 1.3 18.2 2.6.6 6.4 1.3 10.2 1.3 45.4 0 103.3-30.4 138.8-71.5z"/></svg>
-    Join the waitlist
-  </a>
-</nav>
-
 <!-- PRIVACY PAGE -->
 <div class="privacy-page">
   <div class="privacy-container">
+    <a href="/" class="back-link">← Back to Home</a>
+
     <div class="privacy-header">
       <h1>Privacy Policy for Abocado</h1>
       <p>Your privacy matters to us</p>
@@ -406,7 +358,7 @@ footer a:hover {
 
       <h2>Contact Us</h2>
       <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
-      <p><strong>Email:</strong> <a href="mailto:shawnhong.pro@gmail.com">shawnhong.pro@gmail.com</a></p>
+      <p><strong>Email:</strong> <a href="mailto:hello.abocado@gmail.com">hello.abocado@gmail.com</a></p>
 
       <h2>Additional Information</h2>
       
