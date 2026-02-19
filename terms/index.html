@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use for abocado — abocado</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥑</text></svg>">
+<link rel="alternate icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Caveat:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FDFBF5;
+  --bg-warm: #F7F3E8;
+  --green-dark: #4A9657;
+  --green-mid: #5CB86A;
+  --green-bright: #4ade80;
+  --green-light: #E8F5E2;
+  --brown: #8B6914;
+  --brown-light: #C4A55A;
+  --text-primary: #1A1A1A;
+  --text-secondary: #5A5A4F;
+  --text-muted: #8A8A7F;
+  --cream: #FFF9ED;
+  --shadow: 0 20px 60px rgba(74, 150, 87, 0.12);
+  --shadow-lg: 0 40px 80px rgba(74, 150, 87, 0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Grain overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* BACK LINK */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--green-dark);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.back-link:hover {
+  gap: 0.6rem;
+  color: var(--green-mid);
+}
+
+/* TERMS CONTENT */
+.terms-page {
+  padding: 3rem 2rem 4rem;
+  min-height: 100vh;
+}
+
+.terms-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.terms-header {
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.terms-header h1 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.03em;
+}
+
+.terms-header p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.terms-content {
+  background: white;
+  padding: 3rem;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(74, 150, 87, 0.08);
+}
+
+.terms-content h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--green-dark);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms-content h2:first-child {
+  margin-top: 0;
+}
+
+.terms-content h3 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.terms-content h4 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.terms-content p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+.terms-content ul,
+.terms-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.terms-content li {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 0.5rem;
+}
+
+.terms-content a {
+  color: var(--green-mid);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.terms-content a:hover {
+  border-bottom-color: var(--green-mid);
+}
+
+.terms-content strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.terms-content em {
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+.last-updated {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+footer a {
+  color: var(--green-mid);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--green-dark);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .terms-page {
+    padding: 2rem 1.5rem 3rem;
+  }
+  
+  .terms-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .terms-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .terms-content h3 {
+    font-size: 1.15rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- TERMS PAGE -->
+<div class="terms-page">
+  <div class="terms-container">
+    <a href="/" class="back-link">← Back to Home</a>
+
+    <div class="terms-header">
+      <h1>Terms of Use for abocado</h1>
+      <p>Please read these terms carefully</p>
+    </div>
+    
+    <div class="terms-content">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, or using abocado (the "App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the App.</p>
+      <p>abocado is operated by the developer of the App ("we," "our," or "us").</p>
+
+      <h2>2. Description of the Service</h2>
+      <p>abocado is a productivity and screen time management application that enables users to:</p>
+      <ul>
+        <li>Create goals and timers</li>
+        <li>Earn usage time through goal completion</li>
+        <li>Voluntarily restrict selected apps using Apple's Screen Time / FamilyControls framework</li>
+      </ul>
+      <p>All goal data and restriction settings are stored locally on your device.</p>
+      <p>abocado does not access, collect, or transmit detailed usage data from other apps beyond what is required to enforce user-configured restrictions.</p>
+
+      <h2>3. Subscriptions and Free Trial</h2>
+      
+      <h3>3.1 Free Trial</h3>
+      <p>abocado offers a 3-day free trial for its Pro subscription.</p>
+      <p>If you do not cancel at least 24 hours before the 3-day trial ends, your subscription will automatically convert into a paid monthly subscription.</p>
+      <p>The free trial is available only to new subscribers and may not be available to all users at all times.</p>
+      
+      <h3>3.2 Monthly Subscription</h3>
+      <ul>
+        <li><strong>Plan:</strong> Monthly Pro Subscription</li>
+        <li><strong>Billing Cycle:</strong> Monthly</li>
+        <li><strong>Price:</strong> Displayed in the App at the time of purchase</li>
+      </ul>
+      <p>Pricing may vary by country and is determined by the Apple App Store.</p>
+
+      <h2>4. Billing and Auto-Renewal</h2>
+      <p>Payment will be charged to your Apple ID account at confirmation of purchase.</p>
+      <p>The subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period.</p>
+      <p>Your account will be charged for renewal within 24 hours prior to the end of the current period.</p>
+      <p>You can manage or cancel your subscription at any time in your Apple ID account settings.</p>
+      <p>To manage subscriptions:</p>
+      <ul>
+        <li>Settings → Apple ID → Subscriptions</li>
+      </ul>
+      <p>Deleting the App does not cancel your subscription.</p>
+
+      <h2>5. Use of Apple Screen Time / FamilyControls</h2>
+      <p>abocado uses Apple's Screen Time and FamilyControls frameworks to enable voluntary app restrictions configured by the user.</p>
+      <p>Permissions are granted and controlled through iOS system settings.</p>
+      <p>Information obtained through the FamilyControls framework is processed entirely on-device and is never transmitted to our servers or shared with third parties.</p>
+
+      <h2>6. Privacy</h2>
+      <p>Your use of the App is also governed by our Privacy Policy:</p>
+      <p><a href="https://abocado.app/privacy" target="_blank" rel="noopener noreferrer">https://abocado.app/privacy</a></p>
+      <p>We use limited third-party services such as:</p>
+      <ul>
+        <li>RevenueCat (for subscription management)</li>
+        <li>PostHog (for analytics related only to in-app interactions)</li>
+      </ul>
+      <p>Details are provided in our Privacy Policy.</p>
+
+      <h2>7. Acceptable Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Reverse engineer, decompile, or attempt to extract the source code of the App</li>
+        <li>Use the App in violation of applicable laws</li>
+        <li>Interfere with or disrupt the functionality of the App</li>
+      </ul>
+
+      <h2>8. Intellectual Property</h2>
+      <p>All rights, title, and interest in and to the App, including its design, branding, features, and content, remain the property of the developer.</p>
+      <p>You are granted a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial use.</p>
+
+      <h2>9. Disclaimer of Warranties</h2>
+      <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied.</p>
+      <p>We do not warrant that:</p>
+      <ul>
+        <li>The App will function uninterrupted or error-free</li>
+        <li>Any defects will be corrected</li>
+        <li>The App will meet your specific expectations</li>
+      </ul>
+
+      <h2>10. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data, productivity, or goodwill, resulting from your use of the App.</p>
+
+      <h2>11. Termination</h2>
+      <p>We reserve the right to modify or discontinue the App at any time.</p>
+      <p>You may stop using the App at any time. Subscription cancellation must be done through Apple account settings.</p>
+
+      <h2>12. Governing Law</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable therein, without regard to its conflict of laws principles.</p>
+
+      <h2>13. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. Continued use of the App after changes are posted constitutes acceptance of the updated Terms.</p>
+
+      <h2>14. Apple App Store Additional Terms</h2>
+      <p>If you downloaded the App from the Apple App Store, the following additional terms apply:</p>
+      
+      <h3>Acknowledgement</h3>
+      <p>You and we acknowledge that these Terms are concluded between you and us only, and not with Apple Inc. ("Apple"). We, not Apple, are solely responsible for the App and its content.</p>
+      
+      <h3>Scope of License</h3>
+      <p>The license granted to you for the App is limited to a non-transferable license to use the App on Apple-branded products that you own or control, as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions.</p>
+      
+      <h3>Maintenance and Support</h3>
+      <p>We are solely responsible for providing maintenance and support services for the App. Apple has no obligation whatsoever to furnish any maintenance or support services.</p>
+      
+      <h3>Warranty</h3>
+      <p>We are solely responsible for any warranties applicable to the App. If the App fails to conform to any applicable warranty, you may notify Apple, and Apple may refund the purchase price (if any) paid for the App. To the maximum extent permitted by law, Apple will have no other warranty obligation with respect to the App.</p>
+      
+      <h3>Product Claims</h3>
+      <p>We, not Apple, are responsible for addressing any claims relating to the App or your possession and/or use of the App, including:</p>
+      <ul>
+        <li>Product liability claims</li>
+        <li>Claims that the App fails to conform to legal requirements</li>
+        <li>Claims arising under consumer protection or similar laws</li>
+      </ul>
+      
+      <h3>Intellectual Property</h3>
+      <p>In the event of any third-party claim that the App infringes intellectual property rights, we, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of such claim.</p>
+      
+      <h3>Legal Compliance</h3>
+      <p>You represent and warrant that:</p>
+      <ul>
+        <li>You are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country; and</li>
+        <li>You are not listed on any U.S. Government list of prohibited or restricted parties.</li>
+      </ul>
+      
+      <h3>Third-Party Beneficiary</h3>
+      <p>You and we acknowledge and agree that Apple and its subsidiaries are third-party beneficiaries of these Terms and have the right to enforce these Terms against you.</p>
+
+      <h2>15. Contact</h2>
+      <p>If you have any questions about these Terms, please contact:</p>
+      <p><strong>Email:</strong> <a href="mailto:support@abocado.app">support@abocado.app</a></p>
+      
+      <div class="last-updated">
+        <p><strong>Last Updated:</strong> <span id="last-updated-date"></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 abocado. All Rights Reserved.</p>
+</footer>
+
+<script>
+// Set last updated date
+document.getElementById('last-updated-date').textContent = new Date().toLocaleDateString('en-US', { 
+  year: 'numeric', 
+  month: 'long', 
+  day: 'numeric' 
+});
+</script>
+
+</body>
+</html>
+
