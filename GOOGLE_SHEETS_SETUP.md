@@ -77,3 +77,5 @@ const sheet = SpreadsheetApp.openById('YOUR_SPREADSHEET_ID').getSheetByName('She
 
 The current setup allows anyone to submit emails. If you want to add authentication or rate limiting, you'll need to modify the Google Apps Script accordingly.
 
+
+
