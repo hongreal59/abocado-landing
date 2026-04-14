@@ -95,6 +95,24 @@ nav {
   max-width: 100%;
 }
 
+.nav-download-button {
+  background: var(--green-mid);
+  color: white;
+  padding: 0.35rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.nav-download-button:hover {
+  background: var(--green-dark);
+  transform: translateY(-1px);
+}
+
 /* HERO */
 .hero {
   min-height: 100vh;
@@ -552,6 +570,51 @@ footer {
   gap: 0.75rem;
 }
 
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--green-mid);
+  color: white;
+  padding: 0.75rem 1.6rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(92, 184, 106, 0.2);
+}
+
+.download-button:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(92, 184, 106, 0.3);
+}
+
+.download-button:active {
+  transform: translateY(0);
+}
+
+.download-cta {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.download-cta a {
+  display: block;
+}
+
+.no-credit-card {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+  display: block;
+  text-align: center;
+}
+
 .footer-bottom {
   max-width: 1100px;
   margin: 2rem auto 0;
@@ -657,6 +720,9 @@ footer a:hover {
   <a href="#" class="nav-logo">
     <img src="images/logo.png" alt="abocado" class="logo-icon">
   </a>
+  <a href="https://apps.apple.com/us/app/abocado-app-blocker-goals/id6758466507" target="_blank" class="nav-download-button">
+    Download on iOS
+  </a>
 </nav>
 
 <!-- HERO -->
@@ -666,6 +732,12 @@ footer a:hover {
       <div class="hero-badge">🥑 Coming Soon to iOS</div>
       <h1>Mindless scrolling<br>to <span class="accent">meaningful</span> progress.</h1>
       <p class="hero-sub">Complete goals like running, reading, or meditating — and earn minutes to unlock apps like TikTok and YouTube. Screen time you actually earned.</p>
+      <div class="download-cta">
+        <a href="https://apps.apple.com/us/app/abocado-app-blocker-goals/id6758466507" target="_blank" class="download-button">
+          Download on iOS
+        </a>
+        <span class="no-credit-card">No credit card required</span>
+      </div>
     </div>
     <div class="hero-phone">
       <div class="phone-mockup">
